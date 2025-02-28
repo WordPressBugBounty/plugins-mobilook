@@ -3,7 +3,7 @@ Contributors: the-rock, pagup, freemius
 Tags: mobile, responsive, android, iphone for Mobilook
 Requires at least: 4.1
 Requires PHP: 5.6
-Tested up to: 6.6
+Tested up to: 6.7
 Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -171,5 +171,4 @@ Responsive web design is the practice of building websites that work properly on
 * 🐛 FIX: PHP Warning/error when options array is not in the DB.
 
 = 2.0.2 =
-* 👌 IMPROVE: Compatible with WordPress v6.6
-* 👌 IMPROVE: Changed domain name
+* 🐛 FIX: Freemius SDK Security fix

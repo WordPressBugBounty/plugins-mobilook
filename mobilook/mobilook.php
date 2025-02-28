@@ -5,7 +5,7 @@
 * Description: Instant mobile view of website (pages, posts, products) for responsive web design on phone (+ dualscreen). This plugin also offers helpful tools on each page, such as LinkedIn Post Inspector, and Google Mobile-Friendly Test Tool.
 * Author: Pagup
 * Version: 2.0.2
-* Author URI: https://pagup.ca/
+* Author URI: https://pagup.com/
 * Text Domain: mobilook
 * Domain Path: /languages/
 */
