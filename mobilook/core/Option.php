@@ -18,9 +18,8 @@ class Option
      * Retrieves a specific option value by key.
      *
      * @param string $key The key for the option value.
-     * @return mixed The option value.
      */
-    public static function get(string $key): mixed
+    public static function get(string $key)
     {
         $option = static::all();
         return $option[$key];
@@ -54,9 +53,8 @@ class Option
      * Retrieves post meta value by key for the current queried object.
      *
      * @param string $key The key for the post meta value.
-     * @return mixed The post meta value.
      */
-    public static function post_meta(string $key): mixed
+    public static function post_meta(string $key)
     {
         $post_id = get_queried_object_id();
         return get_post_meta($post_id, $key, true);
