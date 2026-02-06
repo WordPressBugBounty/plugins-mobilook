@@ -22,7 +22,7 @@ class MetaboxController
         foreach ($post_types as $post_type) {
             add_meta_box(
                 'mobilook_post_metabox', // id, used as the html id att
-                __('MOBILOOK - Instant Mobile Viewer [mobilook.co]'), // meta box title
+                __('MOBILOOK - Instant Mobile Viewer [mobilook.co]', 'mobilook'), // meta box title
                 [$this, 'metabox'], // callback function, spits out the content
                 $post_type, // post type or page. This adds to posts only
                 'normal', // context, where on the screen
@@ -52,10 +52,10 @@ class MetaboxController
         $options['post_types'] = $this->unserialize($options, 'post_types');
         $options['disable_devices'] = $this->unserialize($options, 'disable_devices');
 
-        wp_localize_script('mobilook__metabox', 'data', [
+        wp_localize_script('mobilook__metabox', 'mobilook_metabox_data', [
             'post_link' => get_permalink($post->ID),
             'post_status' => get_post_status($post->ID),
-            'pro' => mobilook_fs()->can_use_premium_code__premium_only(),
+            'pro' => mobilook_fs()->can_use_premium_code() ? '1' : '0',
             'options' => $options,
             'onboarding' => get_option('mobilook_metabox_tour'),
             'purchase_url' => mobilook_fs()->get_upgrade_url(),

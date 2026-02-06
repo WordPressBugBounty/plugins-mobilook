@@ -50,13 +50,13 @@ class SettingsController
         $options['post_types'] = $this->get_allowed_post_types();
         $options['disable_devices'] = $this->unserialize($options, 'disable_devices');
 
-        wp_localize_script('mobilook__main', 'data', [
+        wp_localize_script('mobilook__main', 'mobilook_main_data', [
             'post_types' => $post_types,
             'options' => $options,
             'home_url' => home_url(),
             'onboarding' => get_option('mobilook_tour'),
             'assets' => plugins_url('assets', dirname(__FILE__)),
-            'pro' => mobilook_fs()->can_use_premium_code__premium_only(),
+            'pro' => mobilook_fs()->can_use_premium_code() ? '1' : '0',
             'plugins' => $this->installable_plugins(),
             'language' => get_locale(),
             'nonce' => wp_create_nonce('mobilook__nonce'),

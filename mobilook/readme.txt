@@ -1,10 +1,10 @@
-=== Mobile View for Responsive web design optimization (UX design) + Mobile Friendly Test ===
+=== MOBILOOK — Mobile View & Mobile‑Friendly Test ===
 Contributors: the-rock, pagup, freemius
 Tags: mobile, responsive, android, iphone for Mobilook
-Requires at least: 4.1
+Requires at least: 5.0
 Requires PHP: 7.4
-Tested up to: 6.8
-Stable tag: 2.0.3
+Tested up to: 6.9
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -175,3 +175,12 @@ Responsive web design is the practice of building websites that work properly on
 
 = 2.0.3 =
 * 🐛 FIX: Fatal error issue caused by mixed return type for PHP 7.x
+
+= 2.1.0 =
+  * 👌 IMPROVE: Updated plugin name for better brand clarity and WordPress.org compliance
+  * 👌 IMPROVE: Added GPL license declaration to plugin header
+  * 👌 IMPROVE: Enhanced Freemius configuration with WordPress.org compliance mode
+  * 👌 IMPROVE: Updated Freemius SDK to latest version 2.13.0
+  * 🐛 FIX: Internationalization - added missing text domain to translation functions
+  * 🐛 FIX: Improved code standards with unique variable naming to prevent conflicts
+  * 🐛 FIX: WordPress.org Plugin Directory guidelines compliance

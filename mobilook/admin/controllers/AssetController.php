@@ -48,9 +48,9 @@ class AssetController
             Asset::style('mobilook__styles', 'admin/ui/settings.css');
             Asset::script('mobilook__main', 'admin/ui/settings.js', ['mobilook__helpers'], true);
         } else {
-            Asset::script_remote('mobilook__main', 'http://localhost:5173/src/main.ts', ['mobilook__client'], true, true);
-            Asset::script_remote('mobilook__metabox', 'http://localhost:5173/src/metabox.ts', ['mobilook__client'], true, true);
+            // Register Vite client first, then scripts that depend on it
             Asset::script_remote('mobilook__client', 'http://localhost:5173/@vite/client', [], true, true);
+            Asset::script_remote('mobilook__main', 'http://localhost:5173/src/main.ts', ['mobilook__client'], true, true);
         }
     }
 
@@ -65,8 +65,9 @@ class AssetController
             Asset::style('mobilook_metabox_styles', 'admin/ui/metabox.css');
             Asset::script('mobilook__metabox', 'admin/ui/metabox.js', ['mobilook__helpers'], true);
         } else {
-            Asset::script_remote('mobilook__metabox', 'http://localhost:5173/src/metabox.ts', ['mobilook__client'], true, true);
+            // Register Vite client first, then scripts that depend on it
             Asset::script_remote('mobilook__client', 'http://localhost:5173/@vite/client', [], true, true);
+            Asset::script_remote('mobilook__metabox', 'http://localhost:5173/src/metabox.ts', ['mobilook__client'], true, true);
         }
     }
 

@@ -1,13 +1,15 @@
 <?php
 
 /*
-* Plugin Name: MOBILOOK
+* Plugin Name: MOBILOOK — Mobile View & Mobile‑Friendly Test
 * Description: Instant mobile view of website (pages, posts, products) for responsive web design on phone (+ dualscreen). This plugin also offers helpful tools on each page, such as LinkedIn Post Inspector, and Google Mobile-Friendly Test Tool.
 * Author: Pagup
-* Version: 2.0.3
+* Version: 2.1.0
 * Author URI: https://pagup.com/
 * Text Domain: mobilook
 * Domain Path: /languages/
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 if ( !defined( 'ABSPATH' ) ) {
     exit;
@@ -35,25 +37,26 @@ if ( function_exists( 'mobilook_fs' ) ) {
                 // Include Freemius SDK.
                 require_once dirname( __FILE__ ) . '/vendor/freemius/start.php';
                 $mobilook_fs = fs_dynamic_init( array(
-                    'id'              => '3641',
-                    'slug'            => 'mobilook',
-                    'type'            => 'plugin',
-                    'public_key'      => 'pk_5061a0f11623f388ce4c9687f669e',
-                    'is_premium'      => false,
-                    'premium_suffix'  => 'for Woocommerce & Debugger',
-                    'has_addons'      => false,
-                    'has_paid_plans'  => true,
-                    'trial'           => array(
+                    'id'               => '3641',
+                    'slug'             => 'mobilook',
+                    'type'             => 'plugin',
+                    'public_key'       => 'pk_5061a0f11623f388ce4c9687f669e',
+                    'is_premium'       => false,
+                    'is_org_compliant' => true,
+                    'premium_suffix'   => 'for Woocommerce & Debugger',
+                    'has_addons'       => false,
+                    'has_paid_plans'   => true,
+                    'trial'            => array(
                         'days'               => 7,
                         'is_require_payment' => true,
                     ),
-                    'has_affiliation' => 'all',
-                    'menu'            => array(
+                    'has_affiliation'  => 'all',
+                    'menu'             => array(
                         'slug'       => 'mobilook',
                         'first-path' => 'admin.php?page=mobilook',
                         'support'    => false,
                     ),
-                    'is_live'         => true,
+                    'is_live'          => true,
                 ) );
             }
             return $mobilook_fs;
