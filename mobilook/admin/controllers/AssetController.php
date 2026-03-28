@@ -81,9 +81,10 @@ class AssetController
      */
     public function add_module_to_script(string $tag, string $handle, string $src): string
     {
-        $handles = ['mobilook__main', 'mobilook__metabox', 'mobilook__select', 'mobilook__client'];
+        // The Vite production bundles use ESM imports, including the shared helpers chunk.
+        $handles = ['mobilook__helpers', 'mobilook__main', 'mobilook__metabox', 'mobilook__select', 'mobilook__client'];
 
-        if (in_array($handle, $handles)) {
+        if (in_array($handle, $handles, true)) {
             $tag = '<script type="module" src="' . esc_url($src) . '"></script>';
         }
 
