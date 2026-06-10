@@ -3,8 +3,8 @@ Contributors: the-rock, pagup, freemius
 Tags: mobile, responsive, android, iphone for Mobilook
 Requires at least: 5.0
 Requires PHP: 7.4
-Tested up to: 6.9
-Stable tag: 2.1.1
+Tested up to: 7.0
+Stable tag: 2.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,9 @@ Responsive web design is the practice of building websites that work properly on
 2. MOBILOOK - Settings Page
 
 == Changelog ==
+
+= 2.1.2 =
+* NEW: Interface language now follows your WordPress site language (9 languages, incl. French & Canadian French). Full French translations for all plugin screens.
 
 = 1.0.0 =
 * Initial release.

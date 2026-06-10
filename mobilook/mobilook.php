@@ -4,7 +4,10 @@
 * Plugin Name: MOBILOOK — Mobile View & Mobile‑Friendly Test
 * Description: Instant mobile view of website (pages, posts, products) for responsive web design on phone (+ dualscreen). This plugin also offers helpful tools on each page, such as LinkedIn Post Inspector, and Google Mobile-Friendly Test Tool.
 * Author: Pagup
-* Version: 2.1.1
+* Version: 2.1.2
+* Requires at least: 5.0
+* Requires PHP: 7.4
+* Tested up to: 6.9
 * Author URI: https://pagup.com/
 * Text Domain: mobilook
 * Domain Path: /languages/
@@ -14,6 +17,13 @@
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
+if ( !function_exists( 'mobilook_load_textdomain' ) ) {
+    function mobilook_load_textdomain() {
+        load_plugin_textdomain( 'mobilook', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+    }
+}
+add_action( 'plugins_loaded', 'mobilook_load_textdomain' );
+
 if ( function_exists( 'mobilook_fs' ) ) {
     mobilook_fs()->set_basename( false, __FILE__ );
 } else {
@@ -85,7 +95,7 @@ if ( function_exists( 'mobilook_fs' ) ) {
         ) {
             $break = "<br><br>";
             $more_plugins = '<p><a target="_blank" href="https://wordpress.org/plugins/meta-tags-for-seo/">Meta Tags for SEO</a>, <a target="_blank" href="https://wordpress.org/plugins/automatic-internal-links-for-seo/">Auto internal links for SEO</a>, <a target="_blank" href="https://wordpress.org/plugins/mobilook/">Bulk auto image Alt Text</a>, <a target="_blank" href="https://wordpress.org/plugins/bulk-image-title-attribute/">Bulk auto image Title Tag</a>, <a target="_blank" href="https://wordpress.org/plugins/mobilook/">Mobile view</a>, <a target="_blank" href="https://wordpress.org/plugins/better-robots-txt/">Wordpress Better-Robots.txt</a>, <a target="_blank" href="https://wordpress.org/plugins/wp-google-street-view/">Wp Google Street View</a>, <a target="_blank" href="https://wordpress.org/plugins/vidseo/">VidSeo</a>, ...</p>';
-            return sprintf( esc_html__( 'Hey %1$s, %2$s Click on Allow & Continue to start optimizing your responsive design on all devices (including foldable screen phones) with MOBILOOK! Don’t spend your time checking your phone to see if your website looks properly. MOBILLOK is a time-saver and features many very helpful tools, like LinkedIn Post Inspector, and Google Mobile-Friendly Test Tool.', 'mobilook' ), $user_first_name, $break ) . $more_plugins;
+            return sprintf( esc_html__( 'Hey %1$s, %2$s Click on Allow & Continue to start optimizing your responsive design on all devices (including foldable screen phones) with MOBILOOK! Don’t waste your time checking your phone to see if your website looks properly. MOBILOOK is a time-saver and features many very helpful tools, like LinkedIn Post Inspector, and Google Mobile-Friendly Test Tool.', 'mobilook' ), $user_first_name, $break ) . $more_plugins;
         }
 
         mobilook_fs()->add_filter(

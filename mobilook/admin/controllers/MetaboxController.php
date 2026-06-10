@@ -59,6 +59,7 @@ class MetaboxController
             'options' => $options,
             'onboarding' => get_option('mobilook_metabox_tour'),
             'purchase_url' => mobilook_fs()->get_upgrade_url(),
+            'language' => get_locale(),
         ]);
 
         echo '<div id="mobilook__metabox"></div>';

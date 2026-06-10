@@ -97,13 +97,13 @@ trait PluginHelperTrait
                 "img"  => "../assets/imgs/1.jpg",
             ],
             [
-                "name" => __( "Yasr – Yet Another Stars Rating by Dario Curvino", "mobilook" ),
+                "name" => __( "Yasr - Yet Another Stars Rating by Dario Curvino", "mobilook" ),
                 "desc" => __( "Boost the way people interact with your website, e-commerce or blog with an easy and intuitive WordPress rating system!", "mobilook" ),
                 "link" => "https://wordpress.org/plugins/yet-another-stars-rating/",
                 "img"  => "../assets/imgs/2.jpg",
             ],
             [
-                "name" => __( "Better Robots.txt optimization – Website indexing, traffic, ranking & SEO Booster + Woocommerce", "mobilook" ),
+                "name" => __( "Better Robots.txt optimization - Website indexing, traffic, ranking & SEO Booster + Woocommerce", "mobilook" ),
                 "desc" => __( "Better Robots.txt is an all in one SEO robots.txt plugin, it creates a virtual robots.txt including your XML sitemaps (Yoast or else) to boost your website ranking on search engines.", "mobilook" ),
                 "link" => "https://wordpress.org/plugins/better-robots-txt/",
                 "img"  => "../assets/imgs/3.png",
@@ -135,7 +135,7 @@ trait PluginHelperTrait
                 "img"  => "../assets/imgs/p01.png",
             ],
             [
-                "name" => __( "WordPress Share Buttons Plugin – AddThis By The AddThis Team", "mobilook" ),
+                "name" => __( "WordPress Share Buttons Plugin - AddThis By The AddThis Team", "mobilook" ),
                 "desc" => __( "Share buttons from AddThis help you get more traffic from sharing through social networks.", "mobilook" ),
                 "link" => "https://wordpress.org/plugins/addthis/",
                 "img"  => "../assets/imgs/p02.png",
@@ -147,7 +147,7 @@ trait PluginHelperTrait
                 "img"  => "../assets/imgs/p03.jpg",
             ],
             [
-                "name" => __( "OneSignal – Free Web Push Notifications By OneSignal", "mobilook" ),
+                "name" => __( "OneSignal - Free Web Push Notifications By OneSignal", "mobilook" ),
                 "desc" => __( "Increase engagement and drive more repeat traffic to your WordPress site with desktop push notifications. Now supporting Chrome, Firefox, and Safari.", "mobilook" ),
                 "link" => "https://wordpress.org/plugins/onesignal-free-web-push-notifications/",
                 "img"  => "../assets/imgs/p04.png",

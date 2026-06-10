@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Mobilook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Mobilook 2.1.1\n"
+"Report-Msgid-Bugs-To: info@pagup.com\n"
+"POT-Creation-Date: 2026-06-10 18:36-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mobilook.php:98
+#, php-format
+msgid ""
+"Hey %1$s, %2$s Click on Allow & Continue to start optimizing your responsive "
+"design on all devices (including foldable screen phones) with MOBILOOK! "
+"Don’t waste your time checking your phone to see if your website looks "
+"properly. MOBILOOK is a time-saver and features many very helpful tools, "
+"like LinkedIn Post Inspector, and Google Mobile-Friendly Test Tool."
+msgstr ""
+
+#: admin\controllers\MetaboxController.php:25
+msgid "MOBILOOK - Instant Mobile Viewer [mobilook.co]"
+msgstr ""
+
+#: admin\controllers\SettingsController.php:21
+msgid "Mobilook Settings"
+msgstr ""
+
+#: admin\controllers\SettingsController.php:22
+msgid "Mobilook"
+msgstr ""
+
+#: admin\controllers\SettingsController.php:36
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: admin\controllers\SettingsController.php:40
+msgid ""
+"Sorry, you are not allowed to edit this page. Ask your administrator for "
+"assistance."
+msgstr ""
+
+#: admin\controllers\SettingsController.php:87
+msgid "Saved Successfully"
+msgstr ""
+
+#: admin\controllers\SettingsController.php:92
+msgid "Error Saving Options"
+msgstr ""
+
+#: admin\controllers\SettingsController.php:112
+msgid "Tour closed value saved successfully"
+msgstr ""
+
+#: admin\controllers\SettingsController.php:117
+msgid "Error Saving Tour closed value"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:94
+msgid "Schema App Structured Data by Hunch Manifest"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:95
+msgid ""
+"Get Schema.org structured data for all pages, posts, categories and profile "
+"pages on activation."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:100
+msgid "Yasr - Yet Another Stars Rating by Dario Curvino"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:101
+msgid ""
+"Boost the way people interact with your website, e-commerce or blog with an "
+"easy and intuitive WordPress rating system!"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:106
+msgid ""
+"Better Robots.txt optimization - Website indexing, traffic, ranking & SEO "
+"Booster + Woocommerce"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:107
+msgid ""
+"Better Robots.txt is an all in one SEO robots.txt plugin, it creates a "
+"virtual robots.txt including your XML sitemaps (Yoast or else) to boost your "
+"website ranking on search engines."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:112
+msgid "Smush Image Compression and Optimization By WPMU DEV"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:113
+msgid ""
+"Compress and optimize (or optimise) image files, improve performance and "
+"boost your SEO rank using Smush WordPress image compression and optimization."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:118
+msgid "404 to 301 By Joel James"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:119
+msgid ""
+"Automatically redirect, log and notify all 404 page errors to any page using "
+"301 redirection..."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:124
+msgid "Yoast SEO By Team Yoast"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:125
+msgid ""
+"Improve your WordPress SEO: Write better content and have a fully optimized "
+"WordPress site using the Yoast SEO plugin."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:132
+msgid "WP-Optimize by David Anderson, Ruhani Rabin, Team Updraft"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:133
+msgid ""
+"WP-Optimize is WordPress's most-installed optimization plugin. With it, you "
+"can clean up your database easily and safely, without manual queries."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:138
+msgid "WordPress Share Buttons Plugin - AddThis By The AddThis Team"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:139
+msgid ""
+"Share buttons from AddThis help you get more traffic from sharing through "
+"social networks."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:144
+msgid "WP-SpamShield WordPress Anti-Spam Plugin by Red Sand Media Group"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:145
+msgid ""
+"WP-SpamShield is a leading WordPress anti-spam plugin that stops spam "
+"instantly and improves your site's security."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:150
+msgid "OneSignal - Free Web Push Notifications By OneSignal"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:151
+msgid ""
+"Increase engagement and drive more repeat traffic to your WordPress site "
+"with desktop push notifications. Now supporting Chrome, Firefox, and Safari."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:156
+msgid "WPfomify - Social Proof & FOMO Marketing Plugin"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:157
+msgid ""
+"WPfomify increases conversion rates on your websites by displaying recent "
+"interaction, sales and sign-ups."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:162
+msgid "Recart - Abandoned Cart Toolbox"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:163
+msgid ""
+"Recart Messenger Marketing and Abandoned Cart Toolbox is a All in one cart "
+"recovery marketing tools for ecommerce solution."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:168
+msgid "Wp-Roket - Probably the best caching Plugin for WordPress"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:169
+#: admin\traits\PluginHelperTrait.php:187
+msgid ""
+"Speed up your WordPress website, more traffic, conversions and money with WP "
+"Rocket caching plugin."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:174
+msgid "Nofollow for external link By CyberNetikz"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:175
+msgid ""
+"Automatically insert rel=nofollow and target=_blank to all the external "
+"links into your website posts, pages or menus. Support exclude domain."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:180
+msgid "Google Reviews Widget By RichPlugins"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:181
+msgid ""
+"Google Reviews Widget show Google Places Reviews on your WordPress website "
+"to increase user confidence and SEO."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:186
+msgid "WP Chatbot for facebook Messenger customer chat By HoliThemes"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:192
+msgid "WP Google My Business Auto Publish By Martin Gibson"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:193
+msgid ""
+"WP Google My Business Auto Publish lets you publish posts, custom posts and "
+"pages automatically from WordPress to your Google My Business page."
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:198
+msgid "WP Search Console"
+msgstr ""
+
+#: admin\traits\PluginHelperTrait.php:199
+msgid ""
+"A new way to boost your marketing content. Writing Web Content that is "
+"ranking like those of SEO Experts."
+msgstr ""

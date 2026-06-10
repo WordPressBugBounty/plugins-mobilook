@@ -84,12 +84,12 @@ class SettingsController
         if ($result) {
             wp_send_json_success([
                 'options' => $options,
-                'message' => 'Saved Successfully',
+                'message' => __('Saved Successfully', 'mobilook'),
             ]);
         } else {
             wp_send_json_error([
                 'options' => $options,
-                'message' => 'Error Saving Options'
+                'message' => __('Error Saving Options', 'mobilook')
             ]);
         }
     }
@@ -109,12 +109,12 @@ class SettingsController
         if ($result) {
             wp_send_json_success([
                 'mobilook_tour' => get_option('mobilook_tour'),
-                'message' => 'Tour closed value saved successfully',
+                'message' => __('Tour closed value saved successfully', 'mobilook'),
             ]);
         } else {
             wp_send_json_error([
                 'mobilook_tour' => get_option('mobilook_tour'),
-                'message' => 'Error Saving Tour closed value'
+                'message' => __('Error Saving Tour closed value', 'mobilook')
             ]);
         }
     }
