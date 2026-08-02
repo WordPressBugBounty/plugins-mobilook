@@ -4,10 +4,10 @@
 * Plugin Name: MOBILOOK — Mobile View & Mobile‑Friendly Test
 * Description: Instant mobile view of website (pages, posts, products) for responsive web design on phone (+ dualscreen). This plugin also offers helpful tools on each page, such as LinkedIn Post Inspector, and Google Mobile-Friendly Test Tool.
 * Author: Pagup
-* Version: 2.1.2
+* Version: 2.1.3
 * Requires at least: 5.0
 * Requires PHP: 7.4
-* Tested up to: 6.9
+* Tested up to: 7.0
 * Author URI: https://pagup.com/
 * Text Domain: mobilook
 * Domain Path: /languages/

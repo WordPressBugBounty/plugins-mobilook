@@ -10,6 +10,14 @@ class AssetController
 {
     use PluginHelperTrait, PostTypeHelperTrait;
 
+    private const MODULE_SCRIPT_HANDLES = [
+        'mobilook__helpers',
+        'mobilook__main',
+        'mobilook__metabox',
+        'mobilook__select',
+        'mobilook__client',
+    ];
+
     private $isProduction;
 
     public function __construct()
@@ -31,10 +39,15 @@ class AssetController
 
         $allowed_post_types =  $this->get_allowed_post_types();
 
-        if ($current_screen && $this->is_allowed_post_type($current_screen->post_type, $allowed_post_types)) {
+        if (
+            $current_screen &&
+            $current_screen->base === 'post' &&
+            $this->is_allowed_post_type($current_screen->post_type, $allowed_post_types)
+        ) {
             $this->enqueue_metabox_assets();
         }
     }
+
     /**
      * Enqueue assets for the Mobilook Settings page.
      */
@@ -81,14 +94,32 @@ class AssetController
      */
     public function add_module_to_script(string $tag, string $handle, string $src): string
     {
-        // The Vite production bundles use ESM imports, including the shared helpers chunk.
-        $handles = ['mobilook__helpers', 'mobilook__main', 'mobilook__metabox', 'mobilook__select', 'mobilook__client'];
-
-        if (in_array($handle, $handles, true)) {
-            $tag = '<script type="module" src="' . esc_url($src) . '"></script>';
+        if (!in_array($handle, self::MODULE_SCRIPT_HANDLES, true)) {
+            return $tag;
         }
 
-        return $tag;
+        // WordPress can prepend translations and inline "before" blocks to the
+        // external script. Only the opening tag carrying src belongs to this
+        // handle; inline scripts must retain their original execution mode.
+        return (string) preg_replace_callback(
+            '/<script\b[^>]*\ssrc=[^>]*>/i',
+            static function (array $match): string {
+                $open = $match[0];
+
+                if (preg_match('/\stype=(["\'])[^"\']*\1/i', $open)) {
+                    return (string) preg_replace(
+                        '/\stype=(["\'])[^"\']*\1/i',
+                        ' type="module"',
+                        $open,
+                        1
+                    );
+                }
+
+                return (string) preg_replace('/<script\b/i', '<script type="module"', $open, 1);
+            },
+            $tag,
+            1
+        );
     }
 
     public function listen_block_editor(): void
