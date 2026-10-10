@@ -3,8 +3,8 @@ Contributors: the-rock, pagup, freemius
 Tags: mobile, responsive, android, iphone for Mobilook
 Requires at least: 5.0
 Requires PHP: 7.4
-Tested up to: 7.0
-Stable tag: 2.1.3
+Tested up to: 7.1
+Stable tag: 2.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,9 @@ Responsive web design is the practice of building websites that work properly on
 2. MOBILOOK - Settings Page
 
 == Changelog ==
+
+= 2.1.4 =
+* Updated Freemius SDK to the latest version
 
 = 2.1.3 =
 * FIXED: Hardened ES module loading, stopped metabox assets on post lists, and contained the mobile preview without changing its logical viewport.
